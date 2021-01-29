@@ -1,0 +1,26 @@
+@media ( max-width: 1200px )
+    .slide
+        @for $i from 1 through 3
+            &-#{$i}
+                background-size: cover
+    .card
+        &-3
+            background-size: cover
+
+@media ( max-width: 992px )
+    .slider
+        &-nav
+            display: none
+
+@media ( max-width: 576px )
+    .slide
+        &-title
+            font-size: 36px
+            line-height: 1.4
+            margin-bottom: 0
+    .card
+        background-position: left top
+        padding: 30px
+        min-height: 300px
+        &-4
+            background-position: right top
